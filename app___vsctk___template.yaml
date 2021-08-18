@@ -1,0 +1,9 @@
+Resources:
+  expofirsttry:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: hooks/useColorScheme.useColorScheme
+      CodeUri: C:/Users/adamm/Desktop/Practice/expofirsttry
+      Runtime: nodejs14.x
+      Environment:
+        Variables: {}
