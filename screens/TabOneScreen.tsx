@@ -13,11 +13,11 @@ export default function TabOneScreen() {
   return (
       <View style={styles.container}>
         <ImageBackground source={require("../assets/images/icon.png")}style= {styles.container}>
-          <Video
+          {/* <Video
               source={require("../assets/20201118_162915.mp4")}
               style={styles.container}
               resizeMode={"cover"}
-               /> 
+               />  */}
         <Text style={styles.title}>Look, Ma! I made an Android app!</Text>
         <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
         <EditScreenInfo path="/screens/TabOneScreen.tsx" />
