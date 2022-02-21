@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, ImageBackground } from 'react-native';
+import { StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
@@ -8,8 +8,14 @@ export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
       <ImageBackground source={require("../assets/images/adaptive-icon.png")} style={styles.container}>
-        <Text style={styles.title}>Look, Ma! I made an Android app!</Text>
+        <Text style={styles.text}>Welcome to Tunj Control!</Text>
         <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+        <View style= {{flexDirection: "row" }} >
+          <TouchableOpacity style={styles.title} onPress={() => navigator.navigate("")}><Text>Furniture Assembly</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.title} onPress={() => navigator.navigate("")}><Text>De-clutter</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.title} onPress={() => navigator.navigate("")}><Text>Appliance Rental</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.title} onPress={() => navigator.navigate("")}><Text>Miscellaneous</Text></TouchableOpacity>
+        </View>
       </ImageBackground>
     </View>
   );
@@ -22,6 +28,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
+    backgroundColor:"powderblue",
+    padding: 10,
+    flex: 1,
+    borderRadius: 50,
+  },
+  text: {
     padding: 10,
     flex: 1,
     fontSize: 20,
