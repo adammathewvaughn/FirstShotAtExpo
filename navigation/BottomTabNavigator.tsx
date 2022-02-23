@@ -28,21 +28,14 @@ export default function BottomTabNavigator() {
         name="TabOne"
         component={TabOneNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="link" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
       />
       <BottomTab.Screen
         name="TabTwo"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="link" color={color} />,
-        }}
-      />
-      <BottomTab.Screen
-        name="TabThree"
-        component={TabThreeNavigator}
-        options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="link" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
       />
     </BottomTab.Navigator>
@@ -65,7 +58,7 @@ function TabOneNavigator() {
       <TabOneStack.Screen
         name="TabOneScreen"
         component={TabOneScreen}
-        options={{ headerTitle: 'Tab One Title' }}
+        options={{ headerTitle: 'Services' }}
       />
     </TabOneStack.Navigator>
   );
@@ -79,7 +72,7 @@ function TabTwoNavigator() {
       <TabTwoStack.Screen
         name="TabTwoScreen"
         component={TabTwoScreen}
-        options={{ headerTitle: 'Tab Two Title' }}
+        options={{ headerTitle: 'Pending Appointments' }}
       />
     </TabTwoStack.Navigator>
   );
@@ -92,10 +85,9 @@ function TabThreeNavigator() {
       <TabThreeStack.Screen
         name="TabThreeScreen"
         component={TabThreeScreen}
-        options={{ headerTitle: 'Tab Three Title' }}
+        options={{ headerTitle: 'Customer Support' }}
       />
     </TabThreeStack.Navigator>
   );
 }
-
 
