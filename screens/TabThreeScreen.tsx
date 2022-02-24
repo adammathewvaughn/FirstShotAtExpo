@@ -7,7 +7,7 @@ import { Text, View } from '../components/Themed';
 export default function TabThreeScreen() {
     return (
         <View style={styles.container}>
-            <ImageBackground source={require("../assets/images/adaptive-icon.png")} style={styles.container}>
+            <ImageBackground source={require("../assets/images/tunj-bg1.png")} style={styles.container}>
                 <Text style={styles.text}>Welcome to Tunj Control!</Text>
                 <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
                 <View style={{ flexDirection: "row" }} >
@@ -44,5 +44,5 @@ const styles = StyleSheet.create({
         height: 1,
         width: '80%',
     },
-    
+
 });

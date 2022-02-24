@@ -13,10 +13,10 @@ export default function TabOneScreen() {
   return (
       
     <View style={styles.container}>
-      <ImageBackground source={require("../assets/images/adaptive-icon.png")} style={styles.container}>
+      <ImageBackground source={require("../assets/images/tunj-bg1.png")} style={styles.container}>
         <Text style={styles.title}>Welcome to Tunj Control!</Text>
         <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-        <View style={{ flexDirection: "row" }} >
+        <View style={{flexDirection: "row" }} >
           <TouchableOpacity style={styles.title} onPress={() => navigator.navigate("")}><Text>Furniture Assembly</Text></TouchableOpacity>
           <TouchableOpacity style={styles.title} onPress={() => navigator.navigate("")}><Text>De-clutter</Text></TouchableOpacity>
           <TouchableOpacity style={styles.title} onPress={() => navigator.navigate("")}><Text>Appliance Rental</Text></TouchableOpacity>
@@ -29,6 +29,7 @@ export default function TabOneScreen() {
 
 const styles = StyleSheet.create({
   container: {
+    minWidth: 400,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',  
@@ -46,8 +47,9 @@ const styles = StyleSheet.create({
     
   },
   separator: {
-    marginVertical: 30,
+    marginTop: 30,
+    marginBottom:150,
     height: 1,
-    width: '80%',
+    width: '5%',
   },
 });
