@@ -4,7 +4,7 @@
     "slug": "expofirsttry",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/",
+    "icon": "./assets/images/adaptive-icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -23,7 +23,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "../assets/images/tunjBackground.pngadaptive-icon.png",
+        "foregroundImage": "../assets/images/tunj-bg1.png",
         "backgroundColor": "#ffffff"
       }
     },
