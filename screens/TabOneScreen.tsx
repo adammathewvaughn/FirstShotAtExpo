@@ -41,8 +41,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   title: {
+    backgroundColor: "powderblue",
     padding: 10,
     flex: 1,
+    borderRadius: 50,
     color: "red",
     
   },
