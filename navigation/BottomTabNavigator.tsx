@@ -32,17 +32,17 @@ export default function BottomTabNavigator() {
         }}
       />
       <BottomTab.Screen
-        name="TabTwo"
+        name="Home"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="link" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="home-sharp" color={color} />,
         }}
       />
       <BottomTab.Screen
-        name="TabThree"
+        name="Profile"
         component={TabThreeNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="link" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="person-sharp" color={color} />,
         }}
       />
     </BottomTab.Navigator>
@@ -77,9 +77,9 @@ function TabTwoNavigator() {
   return (
     <TabTwoStack.Navigator>
       <TabTwoStack.Screen
-        name="TabTwoScreen"
+        name="Home"
         component={TabTwoScreen}
-        options={{ headerTitle: 'Pending Appointments' }}
+        options={{ headerTitle: 'Home' }}
       />
     </TabTwoStack.Navigator>
   );
@@ -90,7 +90,7 @@ function TabThreeNavigator() {
   return (
     <TabThreeStack.Navigator>
       <TabThreeStack.Screen
-        name="TabThreeScreen"
+        name="Profile"
         component={TabThreeScreen}
         options={{ headerTitle: 'Customer Support' }}
       />
