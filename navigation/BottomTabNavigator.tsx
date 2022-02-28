@@ -22,13 +22,13 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName=""
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
       <BottomTab.Screen
-        name="TabOne"
+        name="Profile"
         component={TabOneNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="link" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="person-sharp" color={color} />,
         }}
       />
       <BottomTab.Screen
@@ -39,10 +39,10 @@ export default function BottomTabNavigator() {
         }}
       />
       <BottomTab.Screen
-        name="Profile"
+        name="Customer Service"
         component={TabThreeNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="person-sharp" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="text-sharp" color={color} />,
         }}
       />
     </BottomTab.Navigator>
@@ -63,9 +63,9 @@ function TabOneNavigator() {
   return (
     <TabOneStack.Navigator>
       <TabOneStack.Screen
-        name="TabOneScreen"
+        name="Tunj Profile"
         component={TabOneScreen}
-        options={{ headerTitle: 'Services' }}
+        options={{ headerTitle: 'Tunj Profile' }}
       />
     </TabOneStack.Navigator>
   );
@@ -90,7 +90,7 @@ function TabThreeNavigator() {
   return (
     <TabThreeStack.Navigator>
       <TabThreeStack.Screen
-        name="Profile"
+        name="Customer Support"
         component={TabThreeScreen}
         options={{ headerTitle: 'Customer Support' }}
       />
