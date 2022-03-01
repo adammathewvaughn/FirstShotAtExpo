@@ -13,9 +13,9 @@ export default function TabOneScreen() {
   return (
       
     <View style={styles.container}>
-      <ImageBackground source={require("../assets/images/tunj-bg1.png")} style={styles.container}>
+      <ImageBackground source={require("../assets/images/shipt-bg.png")} style={styles.container}>
         <Text style={styles.headertext}>Tunj Control</Text>
-        <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+        {/* <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" /> */}
         <View style={{flexDirection: "row" }} >
           <TouchableOpacity style={styles.title} onPress={() => navigator.navigate("")}><Text style={styles.text}>Furniture Assembly</Text></TouchableOpacity>
           <TouchableOpacity style={styles.title} onPress={() => navigator.navigate("")}><Text style={styles.text}>De-clutter</Text></TouchableOpacity>
@@ -36,20 +36,16 @@ const styles = StyleSheet.create({
   },
   text: {
     padding: 10,
-    flex: 1,
-    fontSize: 20,
+    fontSize: 10,
+    color: 'white',
     fontWeight: 'bold',
-    color: "cornflowerblue",
   },
   title: {
-    textAlign: 'center',
-    alignItems: 'center',
-    justifyContent: 'center',  
-    height: 70,
-    backgroundColor: "white",
-    padding: 10,
-    flex: 1,
-    borderRadius: 50,
+    flexWrap: "nowrap",
+      backgroundColor: "blue",
+      padding: 5,
+      flex: 1,
+      borderRadius: 20,
   },
   separator: {
     marginTop: 30,
@@ -62,5 +58,6 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 45,
     fontWeight: 'bold',
+    color: 'white',
   },
 });
