@@ -42,7 +42,7 @@ export default function BottomTabNavigator() {
         name="Customer Support"
         component={TabThreeNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="text" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="chatbubble-ellipses-sharp" color={color} />,
         }}
       />
     </BottomTab.Navigator>
@@ -90,7 +90,7 @@ function TabThreeNavigator() {
   return (
     <TabThreeStack.Navigator>
       <TabThreeStack.Screen
-        name="TabThreeScreen"
+        name="Customer Support"
         component={TabThreeScreen}
         options={{ headerTitle: 'Customer Support' }}
       />
