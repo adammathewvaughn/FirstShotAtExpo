@@ -1,14 +1,14 @@
 import * as React from 'react';
-import { StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
+import { StyleSheet, ImageBackground, TouchableOpacity, } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View } from '../components/Themed';
+import { Text, View,  } from '../components/Themed';
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
       <ImageBackground source={require("../assets/images/tunj-bg1.png")} style={styles.container}>
-        <Text style={styles.headertext}>Welcome to Tunj Control!</Text>
+        <View style={styles.header}><Text style={styles.headertext}>Tunj Control</Text></View>
       
         <View style={styles.TouchOp}>
           <TouchableOpacity style={styles.title} onPress={() => navigator.navigate("")}><Text style={styles.text}>Furniture Assembly</Text></TouchableOpacity>
@@ -17,21 +17,23 @@ export default function TabTwoScreen() {
           <TouchableOpacity style={styles.title} onPress={() => navigator.navigate("")}><Text style={styles.text}>Miscellaneous</Text></TouchableOpacity>
         </View>
       </ImageBackground>
+      <View style={styles.footer}/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    minWidth: 400,
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    minWidth: 400,
+    alignItems: "center",
+    justifyContent: "center",
   },
   title: {
-    alignItems: 'center',
-    justifyContent: 'center',  
-    backgroundColor: "cornflowerblue",    padding: 5,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "cornflowerblue",
+    padding: 5,
     flex: 1,
     borderRadius: 50,
   },
@@ -39,30 +41,47 @@ const styles = StyleSheet.create({
     color: "white",
     padding: 10,
     fontSize: 10,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     textAlign: "center",
   },
   separator: {
     marginVertical: 30,
     height: 100,
-    width: '800%',
+    width: "80%",
+  },
+  header: {
+    paddingVertical: 0,
+    marginVertical: 1,
+    marginHorizontal: 45,
+    borderRadius: 50,
+    position: 'absolute',
+    flex: 1,
+    left: 0,
+    right: 0,
+    top: 0,
+    paddingBottom:0,
+    backgroundColor: 'white',
+    flexDirection: 'row',
+    height: 65,
+    alignItems: 'center',
   },
   headertext: {
-    paddingTop: 2,
+    paddingVertical:0,
+    marginVertical:0,
+    textAlign: "center",
     flex: 1,
-    fontSize: 45,
-    fontWeight: 'bold',
-    color: "white", 
+    fontSize: 40,
+    fontWeight: "bold",
+    color: "cornflowerblue",
   },
   TouchOp: {
-    width: 600,
+    position: 'absolute',
+    flex: .01,
+    left: 0,
+    right: 0,
+    bottom: -10,
     flexDirection: "row",
     backgroundColor: "transparent",
-    marginHorizontal: "5%",
-   paddingHorizontal: "2.5%",
-    marginVertical: "2.5%",
-   paddingVertical: "2.5%",
-   justifyContent:"center",
-   alignItems: 'center',
+    marginBottom: 25,
   },
 });

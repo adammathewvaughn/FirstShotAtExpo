@@ -50,11 +50,12 @@ const styles = StyleSheet.create({
         width: "80%",
     },
     headertext: {
+        
         paddingTop: 2,
         flex: 1,
         fontSize: 45,
         fontWeight: "bold",
-        color: "aqua",
+        color: "cornflowerblue",
     },
     TouchOp: {
         flexDirection: "row",
